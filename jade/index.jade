@@ -1,0 +1,27 @@
+extends layout
+block head
+    link(rel="stylesheet" href="css/style.css?__VERSION")
+    title 马路新秀的故事
+
+block main
+    div(id="first").container
+        img(src="img/blank.gif", data-src="img/title.png").img-title
+        img(src="img/blank.gif", data-src="img/label.png").img-label
+        div.input
+            input(type="text", id="name", maxlength="4")
+        div.checkbox.ui-flex
+            label.ui-col-1
+                input(type="radio", name="sex", checked="true", value="1")
+            label.ui-col-1
+                input(type="radio", name="sex", value="2")
+        button(type="button", id="btnCreate").btn
+    //div(id="second")
+    //    div.bac-road
+    //        //canvas(id="compose", width="520", height="500").img-bac
+    //        img(id="compose", src="img/blank.gif").img-bac
+    //    h4.tc 妹子是个超级马路杀手，还不学车！
+    //    a(href="#")
+    //        img(src="img/blank.gif", data-src="img/money.png").img-money
+//马路新秀的故事二维码链接	http://chelun.com/url/aMhPd6
+block script
+    script(src="js/index.bundle.js?__VERSION")

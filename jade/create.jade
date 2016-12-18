@@ -1,0 +1,13 @@
+extends layout
+block head
+    link(rel="stylesheet" href="css/style.css?__VERSION")
+    title 马路新秀的故事
+
+block main
+    div(id="second")
+        div.bac-road
+            //canvas(id="compose", width="520", height="500").img-bac
+            img(id="compose", src="img/blank.gif").img-bac
+        h4(id="txt").tc 妹子是个超级马路杀手，还不学车！
+block script
+    script(src="js/index.bundle.js?__VERSION")
